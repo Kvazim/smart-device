@@ -3,6 +3,30 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
+  // max-width: 1220px;
+  padding: 0 350px;
   min-height: 120px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__callback {
+    justify-self: end;
+    min-width: 160px;
+    margin-right: 60px;
+    padding: 10px 15px;
+    border: 1px solid $color-alice-blue;
+    background-color: transparent;
+    font-family: $ff-robotocondensed;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: $color-alice-blue;
+  }
 }
