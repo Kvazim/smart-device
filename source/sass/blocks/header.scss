@@ -1,0 +1,19 @@
+.header {
+  min-height: 120px;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1920px;
+  }
+
+  @include vp-1023 {
+    min-height: 100px;
+  }
+
+  @include vp-767 {
+    min-height: 70px;
+  }
+}

@@ -1,8 +1,10 @@
 .wrapper {
   position: relative;
-
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));

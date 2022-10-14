@@ -1,5 +1,14 @@
 .navigation-contacts {
   list-style-type: none;
+  padding-left: 70px;
+  padding-right: 81px;
+  align-items: center;
+
+  @include vp-1023 {
+    padding: 0;
+    padding-right: 20px;
+    column-gap: 20px;
+  }
 
   &__link {
     display: inline-flex;
@@ -11,5 +20,39 @@
     font-weight: 400;
     line-height: 18px;
     color: $color-alice-blue;
+
+    @include vp-1023 {
+      padding: 10px;
+
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover,
+        &:focus {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    fill: $color-deep-sky-blue;
+  }
+
+  &__text {
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+}
+
+@media (hover: hover), screen and (min-width: 0\0) {
+
+  .navigation-contacts__link:hover .navigation-contacts__text,
+  .navigation-contacts__link:focus .navigation-contacts__text {
+    color: $color-deep-sky-blue;
+  }
+
+  .navigation-contacts__link:active {
+    opacity: 0.3;
   }
 }
