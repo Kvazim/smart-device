@@ -1,6 +1,7 @@
 .header {
   min-height: 120px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 1;
 
   &--fixed {
     position: fixed;

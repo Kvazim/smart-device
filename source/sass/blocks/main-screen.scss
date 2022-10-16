@@ -1,0 +1,94 @@
+.main-screen .container {
+  padding: 185px 126px 280px;
+
+  @include vp-1023 {
+    padding: 80px 50px 205px;
+  }
+}
+
+.main-screen {
+  margin-top: -17px;
+  background-color: $color-black-pearl;
+  background-image: url("../img/main-fon.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/main-fon@2x.jpg");
+    background-size: 1920px auto;
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/main-fon-tablet.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-fon-tablet@2x.jpg");
+      background-size: 770px auto;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: $ff-robotocondensed;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $color-alice-blue;
+
+    @include vp-1023 {
+      margin-bottom: 20px;
+      font-size: 64px;
+      line-height: 75px;
+    }
+  }
+
+  &__subtitle {
+    width: 685px;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: $ff-ptmono;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 34px;
+    color: $color-alice-blue;
+
+    @include vp-1023 {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__button {
+    padding: 15px 25px;
+    border: none;
+    background-color: $color-deep-sky-blue;
+    font-family: $ff-robotocondensed;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-alice-blue;
+    cursor: pointer;
+
+    @include vp-1023 {
+      margin-left: 50px;
+    }
+
+    @media (hover: hover),
+    screen and (min-width: 0\0) {
+
+      &:hover,
+      &:focus {
+        background-color: $color-neon-blue;
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  }
+}

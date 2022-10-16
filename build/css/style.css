@@ -639,6 +639,7 @@ button,
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 1;
 }
 
 .header--fixed {
@@ -741,6 +742,56 @@ button,
 
 .navigation-contacts__icon {
   fill: #00B2FF;
+}
+
+.main-screen .container {
+  padding: 185px 126px 280px;
+}
+
+.main-screen {
+  margin-top: -17px;
+  background-color: #041827;
+  background-image: url("../img/main-fon.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-screen__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #F2F5F6;
+}
+
+.main-screen__subtitle {
+  width: 685px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #F2F5F6;
+}
+
+.main-screen__button {
+  padding: 15px 25px;
+  border: none;
+  background-color: #00B2FF;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #F2F5F6;
+  cursor: pointer;
 }
 
 .btn {
@@ -906,6 +957,15 @@ button,
     opacity: 0.3;
   }
 
+  .main-screen__button:hover,
+  .main-screen__button:focus {
+    background-color: #2c39f2;
+  }
+
+  .main-screen__button:active {
+    opacity: 0.8;
+  }
+
   .btn:hover,
   .btn:focus {
     opacity: 0.8;
@@ -955,6 +1015,35 @@ button,
   .navigation-contacts__text {
     display: none;
   }
+
+  .main-screen .container {
+    padding: 80px 50px 205px;
+  }
+
+  .main-screen {
+    background-image: url("../img/main-fon-tablet.jpg");
+  }
+
+  .main-screen__title {
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .main-screen__subtitle {
+    margin-bottom: 50px;
+  }
+
+  .main-screen__button {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .main-screen {
+    background-image: url("../img/main-fon-tablet@2x.jpg");
+    background-size: 770px auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -998,5 +1087,12 @@ button,
   .navigation-contacts__link:hover,
   .navigation-contacts__link:focus {
     opacity: 0.8;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  .main-screen {
+    background-image: url("../img/main-fon@2x.jpg");
+    background-size: 1920px auto;
   }
 }
