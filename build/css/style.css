@@ -629,9 +629,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1220px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 0 40px;
 }
 
 .header {
@@ -654,6 +654,10 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 2fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
+}
+
+.navigation__logo {
+  padding-top: 30px;
 }
 
 .navigation__logo:hover,
@@ -680,7 +684,7 @@ button,
 }
 
 .navigation__callback {
-  margin-top: 5px;
+  margin-top: 35px;
   -ms-grid-column-align: end;
   justify-self: end;
   -ms-flex-item-align: start;
@@ -690,6 +694,7 @@ button,
   margin-right: 60px;
   padding: 10px 15px;
   border: 1px solid #F2F5F6;
+  border-radius: 3px;
   background-color: transparent;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
@@ -698,6 +703,7 @@ button,
   letter-spacing: 0.05em;
   color: #F2F5F6;
   text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -713,8 +719,9 @@ button,
 
 .navigation-contacts {
   list-style-type: none;
+  padding-top: 29px;
   padding-left: 70px;
-  padding-right: 81px;
+  padding-right: 80px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -745,7 +752,7 @@ button,
 }
 
 .main-screen .container {
-  padding: 185px 126px 280px;
+  padding: 200px 165px 285px;
 }
 
 .main-screen {
@@ -753,11 +760,12 @@ button,
   background-color: #041827;
   background-image: url("../img/main-fon.jpg");
   background-repeat: no-repeat;
+  background-position: 0 -103px;
 }
 
 .main-screen__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
@@ -771,7 +779,7 @@ button,
 .main-screen__subtitle {
   width: 685px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   padding: 0;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 22px;
@@ -783,6 +791,7 @@ button,
 .main-screen__button {
   padding: 15px 25px;
   border: none;
+  border-radius: 3px;
   background-color: #00B2FF;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
@@ -1017,32 +1026,33 @@ button,
   }
 
   .main-screen .container {
-    padding: 80px 50px 205px;
+    padding: 96px 50px 208px;
   }
 
   .main-screen {
-    background-image: url("../img/main-fon-tablet.jpg");
+    background-size: 1396px auto;
+    background-position: -121px -83px;
   }
 
   .main-screen__title {
-    margin-bottom: 20px;
+    margin-bottom: 1px;
     font-size: 64px;
     line-height: 75px;
   }
 
   .main-screen__subtitle {
-    margin-bottom: 50px;
+    width: 100%;
+    margin-bottom: 45px;
   }
 
   .main-screen__button {
-    margin-left: 50px;
+    margin-left: 46px;
   }
 }
 
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .main-screen {
-    background-image: url("../img/main-fon-tablet@2x.jpg");
-    background-size: 770px auto;
+    background-size: 1396px auto;
   }
 }
 
@@ -1064,9 +1074,44 @@ button,
     padding-top: 15px;
   }
 
+  .navigation__contacts {
+    padding: 10px 10px 0 0;
+  }
+
   .navigation__logo img {
     width: 35px;
     height: 35px;
+  }
+
+  .main-screen .container {
+    padding: 97px 26px 189px;
+  }
+
+  .main-screen {
+    background-size: 1220px auto;
+    background-position: -229px -53px;
+  }
+
+  .main-screen__title {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .main-screen__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .main-screen__button {
+    margin-left: 0;
+    padding: 12px 32px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .main-screen__button span {
+    display: none;
   }
 
   .modal__wrapper {
@@ -1083,6 +1128,12 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .main-screen {
+    background-size: 1220px auto;
+  }
+}
+
 @media (max-width: 1023px) and (hover: hover), screen and (max-width: 1023px) and (min-width: 0\0) {
   .navigation-contacts__link:hover,
   .navigation-contacts__link:focus {
@@ -1090,7 +1141,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-screen {
     background-image: url("../img/main-fon@2x.jpg");
     background-size: 1920px auto;

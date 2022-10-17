@@ -1,17 +1,17 @@
-const HEADER = document.querySelector('.header');
-const MAIN = document.querySelector('main');
-const HeaderHeidht = HEADER.offsetHeight;
+const header = document.querySelector('.header');
+const main = document.querySelector('main');
+const headerHeidht = header.offsetHeight;
 const breakpoint = window.matchMedia('(min-width:1024px)');
 
 const onWindowScroll = () => {
   let scrollDistance = window.scrollY;
 
   if (scrollDistance > 1) {
-    HEADER.classList.add('header--fixed');
-    MAIN.style.marginTop = `${HeaderHeidht}px`;
+    header.classList.add('header--fixed');
+    main.style.marginTop = `${headerHeidht}px`;
   } else {
-    HEADER.classList.remove('header--fixed');
-    MAIN.style.marginTop = null;
+    header.classList.remove('header--fixed');
+    main.style.marginTop = null;
   }
 };
 

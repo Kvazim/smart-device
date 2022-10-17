@@ -1,7 +1,8 @@
 .navigation-contacts {
   list-style-type: none;
+  padding-top: 29px;
   padding-left: 70px;
-  padding-right: 81px;
+  padding-right: 80px;
   align-items: center;
 
   @include vp-1023 {
@@ -9,43 +10,46 @@
     padding-right: 20px;
     column-gap: 20px;
   }
+}
 
-  &__link {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
-    font-family: $ff-ptmono;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $color-alice-blue;
+.navigation-contacts__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  font-family: $ff-ptmono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-alice-blue;
 
-    @include vp-1023 {
-      padding: 10px;
+  @include vp-1023 {
+    padding: 10px;
 
-      @media (hover: hover), screen and (min-width: 0\0) {
-        &:hover,
-        &:focus {
-          opacity: 0.8;
-        }
+    @media (hover: hover),
+    screen and (min-width: 0\0) {
+
+      &:hover,
+      &:focus {
+        opacity: 0.8;
       }
-    }
-  }
-
-  &__icon {
-    fill: $color-deep-sky-blue;
-  }
-
-  &__text {
-
-    @include vp-1023 {
-      display: none;
     }
   }
 }
 
-@media (hover: hover), screen and (min-width: 0\0) {
+.navigation-contacts__icon {
+  fill: $color-deep-sky-blue;
+}
+
+.navigation-contacts__text {
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+@media (hover: hover),
+screen and (min-width: 0\0) {
 
   .navigation-contacts__link:hover .navigation-contacts__text,
   .navigation-contacts__link:focus .navigation-contacts__text {

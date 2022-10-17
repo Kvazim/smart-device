@@ -5,8 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Описание проекта">
+  <meta name="description"
+    content="Компания Smart Device, печатные платы, производство и монтаж, поставка комплектующих, блоков и модулей, комплектующие для светотехники.">
   <title>Умные технологии Smart Device</title>
+  <meta name="msapplication-config" content="./img/favicon/browserconfig.xml" />
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" href="./img/favicon/apple-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="./fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -44,7 +52,7 @@
               </a>
             </li>
           </ul>
-          <button class="navigation__callback" type="button">Заказать звонок</button>
+          <a class="navigation__callback" type="button">Заказать звонок</a>
         </nav>
       </div>
     </header>
@@ -54,7 +62,7 @@
         <div class="container">
           <h2 class="main-screen__title">Печатные платы</h2>
           <p class="main-screen__subtitle">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="main-screen__button" type="button">Получить бесплатную консультацию</button>
+          <button class="main-screen__button" type="button"><span>Получить </span>бесплатную консультацию</button>
         </div>
       </section>
       <section class="intro">
@@ -68,9 +76,85 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <h2>Это футер</h2>
+        <section class="social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <img class="social__logo" src="./img/svg/logo-full.svg" width="215" height="55"
+            alt="Логотип компании Smart Device.">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="40" height="40" role="img" aria-hidden="true" viewBox="0 0 21 20">
+                  <use xlink:href="./img/sprite_auto.svg#ok"></use>
+                </svg>
+                <span class="visually-hidden">Мы в одноклассниках</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="40" height="40" role="img" aria-hidden="true" viewBox="0 0 21 20">
+                  <use xlink:href="./img/sprite_auto.svg#vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы в контакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="40" height="40" role="img" aria-hidden="true" viewBox="0 0 21 20">
+                  <use xlink:href="./img/sprite_auto.svg#pinterest"></use>
+                </svg>
+                <span class="visually-hidden">мы в pinterest</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section-site">
+          <h3 class="section-site__title">Разделы сайта</h3>
+          <nav class="section-site__navigation">
+            <ul class="section-site__list">
+              <li class="section-site__item">
+                <a class="section-site__link" href="#">О Компаниии</a>
+              </li>
+              <li class="section-site__item">
+                <a class="section-site__link" href="#">Продукты</a>
+              </li>
+              <li class="section-site__item">
+                <a class="section-site__link" href="#">Производство печатных плат</a>
+              </li>
+              <li class="section-site__item">
+                <a class="section-site__link" href="#">Монтаж печатных плат</a>
+              </li>
+              <li class="section-site__item">
+                <a class="section-site__link" href="#">Комплектующие</a>
+              </li>
+              <li class="section-site__item">
+                <a class="section-site__link" href="#">Доставка</a>
+              </li>
+              <li class="section-site__item">
+                <a class="section-site__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="contacts">
+          <h2 class="contacts__title">Наш офис</h2>
+          <p class="contacts__addres">г. Мытищи, Олимпийский проспект, д.10</p>
+          <ul class="contacts__phone phone phone__list">
+            <li class="phone__item">
+              <a class="phone__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li class="phone__item">
+              <a class="phone__link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+            </li>
+            <li class="phone__item">
+              <a class="phone__link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+            </li>
+          </ul>
+        </section>
+
       </div>
     </footer>
   </div>
