@@ -1,0 +1,37 @@
+.toogle {
+  display: none;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: $color-transparent;
+  cursor: pointer;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+// .toggle__bar {
+//   display: inline-block;
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+
+//   &::before,
+//   &::after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//   }
+
+//   &,
+//   &::before,
+//   &::after {
+//     width: 100%;
+//     height: 2px;
+//     left: 0;
+//     background-color: $color-shades-silver;
+//     transition: transform 0.3s linear;
+//   }
+// }
