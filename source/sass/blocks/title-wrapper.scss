@@ -1,6 +1,45 @@
 @include vp-767 {
   .title-wrapper {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+
+      &:hover .section-site__title,
+      &:focus .section-site__title,
+      &:hover .contacts__title,
+      &:focus .contacts__title {
+        color: $color-neon-blue;
+      }
+
+      &:hover .toogle__bar::after,
+      &:hover .toogle__bar::before,
+      &:focus .toogle__bar::after,
+      &:focus .toogle__bar::before {
+        background-color: $color-neon-blue;
+      }
+
+      &:active .section-site__title,
+      &:active .contacts__title {
+        color: $color-neon-blue;
+        opacity: 0.7;
+      }
+
+      &:active .toogle__bar::after,
+      &:active .toogle__bar::before {
+        background-color: $color-neon-blue;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &.is-active .toogle__bar::after {
+    transform: rotate(0deg);
+    transition: transform 0.3s linear;
+  }
+
+  &.is-active + .content-wrapper {
+    display: block;
   }
 }

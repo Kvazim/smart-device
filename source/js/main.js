@@ -1,8 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {breakpointChecker} from './modules/scroll/scroll';
-
-breakpointChecker();
+// import './modules/nojs/nojs';
+// import {enableToogle} from './modules/footer-toogle/footer-toogle';
+import './modules/footer-toogle/footer-toogle';
 
 // ---------------------------------
 
@@ -22,6 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
   });
 });
+
+breakpointChecker();
+// removeClassNojs();
+// enableToogle();
 
 // ---------------------------------
 

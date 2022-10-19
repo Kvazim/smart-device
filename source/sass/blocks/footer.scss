@@ -4,14 +4,15 @@
 
 .footer .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 355px 480px 1fr;
+  gap: 20px;
   padding-top: 50px;
   padding-bottom: 55px;
 
   @include vp-1023 {
     grid-template-columns: 1fr 1fr;
-    row-gap: 35px;
+    column-gap: 30px;
+    row-gap: 27px;
   }
 
   @include vp-767 {

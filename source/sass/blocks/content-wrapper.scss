@@ -3,5 +3,6 @@
 
     @include vp-767 {
       display: none;
+      grid-column: 1/-1;
     }
   }
