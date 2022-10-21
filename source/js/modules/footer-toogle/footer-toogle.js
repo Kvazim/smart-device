@@ -8,12 +8,6 @@ const onCloseAccardion = (element) => {
   element.classList.remove('is-active');
 };
 
-// const onOpenElements =(toogles) = {
-//   toogles.forEach((toogle) => {
-//     toogle.classList.contains('is-active')
-//   })
-// };
-
 const onButtonClick = (e) => {
   const element = e.target;
 

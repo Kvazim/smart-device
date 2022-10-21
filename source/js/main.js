@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {breakpointChecker} from './modules/scroll/scroll';
+import './modules/show-content/show-content';
 // import './modules/nojs/nojs';
 // import {enableToogle} from './modules/footer-toogle/footer-toogle';
 import './modules/footer-toogle/footer-toogle';

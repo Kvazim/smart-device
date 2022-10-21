@@ -13,13 +13,13 @@
 .main-screen {
   margin-top: -17px;
   background-color: $color-black-pearl;
-  background-image: url("../img/main-fon.jpg");
+  background-image: $black-pearl-main, url("../img/main-fon.jpg");
   background-repeat: no-repeat;
   background-position: 0 -103px;
 
   @media (min-width: 1024px) {
     @include retina {
-      background-image: url("../img/main-fon@2x.jpg");
+      background-image:$black-pearl-main, url("../img/main-fon@2x.jpg");
       background-size: 1920px auto;
     }
   }
@@ -116,8 +116,7 @@
     line-height: 16px;
   }
 
-  @media (hover: hover),
-  screen and (min-width: 0\0) {
+  @media (hover: hover), screen and (min-width: 0\0) {
 
     &:hover,
     &:focus {
