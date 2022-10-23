@@ -1,6 +1,15 @@
 .about {
-  padding-top: 60px;
-  padding-bottom: 95px;
+  padding-top: 50px;
+  padding-bottom: 99px;
+
+  @include vp-1023 {
+    padding-top: 8px;
+    padding-bottom: 80px;
+  }
+
+  @include vp-767 {
+    padding-top: 22px;
+  }
 }
 
 .about .container {
@@ -9,17 +18,23 @@
   column-gap: 100px;
 
   @include vp-1023 {
+    padding-left: 46px;
     column-gap: 29px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    padding: 0 25px;
   }
 }
 
 .about__img {
   width: 150px;
   height: 320px;
+
+  @include vp-1023 {
+    margin-top: 5px;
+  }
 
   @include vp-767 {
     display: none;

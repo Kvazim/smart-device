@@ -1,0 +1,47 @@
+.form-modal-wrapper form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form-modal-wrapper input {
+  @include form-input-text;
+}
+
+.form-modal-wrapper input::placeholder {
+  @include form-input-text;
+  background-color: transparent;
+}
+
+.form-modal-wrapper textarea {
+  @include form-input-text;
+  min-height: 155px;
+  padding: 25px 15px;
+}
+
+.form-modal-wrapper textarea::placeholder {
+  @include form-input-text;
+  background-color: transparent;
+}
+
+.form-modal-wrapper button {
+  @include form-button;
+  margin-top: 15px;
+  padding: 15px 25px;
+
+  @include form-button-hover;
+}
+
+.form-modal-wrapper label {
+  @include form-label;
+}
+
+.form-modal-wrapper input[type="checkbox"]+span {
+  @include checkbox;
+}
+
+.form-modal-wrapper input[type="checkbox"]:checked+span::before {
+  @include checkbox-checked;
+}
+
+@include checkbox-hover;

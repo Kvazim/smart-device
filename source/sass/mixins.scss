@@ -60,6 +60,126 @@
   color: $color-white-shadow;
 }
 
+@mixin form-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-family: $ff-robotocondensed;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  color: $color-default-white;
+}
+
+@mixin form-subtitle {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  font-family: $ff-ptmono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+@mixin form-input-text {
+  padding: 15px;
+  padding-top: 13px;
+  border: none;
+  border-radius: 3px;
+  background-color: $color-black-pearl-form;
+  font-family: $ff-ptmono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+@mixin form-button {
+  border: none;
+  border-radius: 3px;
+  background-color: $color-black-pearl-button;
+  font-family: $ff-robotocondensed;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@mixin form-label {
+  display: flex;
+  column-gap: 11px;
+  align-items: center;
+  font-family: $ff-ptmono;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-default-white;
+}
+
+@mixin checkbox {
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 3px;
+}
+
+@mixin checkbox-checked {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: 3px;
+  background-image: url("../img/svg/checked.svg");
+  background-repeat: no-repeat;
+}
+
+@mixin checkbox-hover {
+  @media (hover: hover), screen and (min-width: 0\0) {
+
+    .form-wrapper input[type="checkbox"]:hover+span,
+    .form-wrapper input[type="checkbox"]:focus+span {
+      border-color: $color-neon-blue;
+    }
+
+    .form-wrapper input[type="checkbox"]:active+span {
+      opacity: 0.4;
+    }
+
+    .form-wrapper input[type="checkbox"]:disabled+span {
+      opacity: 0.8;
+    }
+  }
+}
+
+ @mixin form-button-hover {
+  @media (hover: hover), screen and (min-width: 0\0) {
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  &:disabled {
+    background-color: $color-black-pearl-form;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+ }
+
 // Mobile first
 
 // @mixin vp-375 {

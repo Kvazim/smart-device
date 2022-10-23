@@ -1,0 +1,11 @@
+.form-modal__title {
+  @include form-title;
+  font-size: 30px;
+  line-height: 43px;
+}
+
+.form-modal__subtitle {
+  @include form-subtitle;
+  margin-bottom: 40px;
+  padding-right: 40px;
+}
