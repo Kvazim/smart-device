@@ -74,6 +74,7 @@
     &:hover .social__icon,
     &:focus .social__icon {
       fill: $color-deep-sky-blue;
+      color: $color-deep-sky-blue;
     }
 
     &:active .social__icon {
@@ -85,4 +86,5 @@
 .social__icon {
   display: block;
   fill: $color-alice-blue-no-shadow;
+  color: $color-alice-blue-no-shadow;
 }

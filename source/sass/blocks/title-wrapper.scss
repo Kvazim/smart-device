@@ -13,10 +13,10 @@
         color: $color-neon-blue;
       }
 
-      &:hover .toogle__bar::after,
-      &:hover .toogle__bar::before,
-      &:focus .toogle__bar::after,
-      &:focus .toogle__bar::before {
+      &:hover .toogle::after,
+      &:hover .toogle::before,
+      &:focus .toogle::after,
+      &:focus .toogle::before {
         background-color: $color-neon-blue;
       }
 
@@ -26,15 +26,15 @@
         opacity: 0.7;
       }
 
-      &:active .toogle__bar::after,
-      &:active .toogle__bar::before {
+      &:active .toogle::after,
+      &:active .toogle::before {
         background-color: $color-neon-blue;
         opacity: 0.7;
       }
     }
   }
 
-  &.is-active .toogle__bar::after {
+  &.is-active .toogle::after {
     transform: rotate(0deg);
     transition: transform 0.3s linear;
   }

@@ -17,13 +17,7 @@
   margin-top: 7px;
   margin-bottom: 20px;
   padding: 0;
-  font-family: $ff-robotocondensed;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-  color: $color-default-white;
-  text-transform: uppercase;
+  @include footer-title;
 
   @include vp-767 {
     margin: 0;
@@ -45,14 +39,27 @@
 
 .section-site__item {
   list-style-type: none;
+
+  @media (min-width: 1024px) {
+    &--accessories {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    &--delivery {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    &--contacts {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+  }
 }
 
 .section-site__link {
-  font-family: $ff-ptmono;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-white-shadow;
+  @include footer-subtitle;
 
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,

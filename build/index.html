@@ -62,7 +62,8 @@
         <div class="container">
           <h2 class="main-screen__title">Печатные платы</h2>
           <p class="main-screen__subtitle">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="main-screen__button" type="button"><span>Получить </span>бесплатную консультацию</button>
+          <a class="main-screen__button" href="#"><span class="main-screen__desktop">Получить бесплатную
+              консультацию</span><span class="main-screen__mobile">бесплатная консультация</span></a>
         </div>
       </section>
       <section class="benefits">
@@ -107,8 +108,8 @@
       <section class="about">
         <div class="container">
           <picture>
-            <source media="(max-width: 769px)" type="image/webp"
-              srcset="./img/contents/triple-set-mobile.webp 1x, img/contents/triple-set-mobile@2x.webp 2x">
+            <source type="image/webp"
+              srcset="./img/content/2022.webp 1x, ./img/content/2022@2x.webp 2x">
             <img class="about__img" src="./img/content/2022.jpg" srcset="./img/content/2022@2x.jpg 2x" width="150"
               height="320" alt="2022.">
           </picture>
@@ -165,6 +166,39 @@
           </ul>
         </div>
       </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="container">
+          <div class="feedback__wrapper-image">
+            <picture>
+              <source type="image/webp"
+                srcset="./img/content/paper-airplane.webp 1x, img/content/paper-airplane@2x.webp 2x">
+              <img class="feedback__image" src="./img/content/paper-airplane.png"
+                srcset="./img/content/paper-airplane@2x.png 2x" alt="Бумажный самолетик." width="510" height="285">
+            </picture>
+          </div>
+          <div class="feedback__form form">
+            <h3 class="form__title">Остались вопросы? Задайте их нам!</h3>
+            <p class="form__subtitle">Мы проконсультируем Вас бесплатно</p>
+            <div class="form-wrapper">
+              <form action="#" method="get">
+                <label class="visually-hidden" for="name">Введите Ваше имя</label>
+                <input type="text" name="name" placeholder="Имя" id="name" required>
+                <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
+                <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+                <label class="visually-hidden" for="question">Задайте вопрос</label>
+                <textarea placeholder="Ваш вопрос" id="question"></textarea>
+                <button type="submit">Задать вопрос</button>
+                <label class="form__checkbox control">
+                  <input class="visually-hidden" type="checkbox" checked required>
+                  <span class="control__checkbox"></span>
+                  <span class="control__subtitle">Я согласен на обработку персональных данных</span>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- <section class="intro">
         <div class="container">
           <h1>Тестовая страница.</h1>
@@ -212,8 +246,8 @@
 
         <section class="section-site">
           <div class="title-wrapper is-active">
-            <h3 class="section-site__title">Разделы сайта</h3>
-            <button class="toogle" type="button"><span class="toogle__bar"></span></button>
+            <h3 class="section-site__title title-wrapper__title">Разделы сайта</h3>
+            <button class="toogle" type="button"></button>
           </div>
           <div class="content-wrapper">
             <nav class="section-site__navigation">
@@ -230,13 +264,13 @@
                 <li class="section-site__item">
                   <a class="section-site__link" href="#">Монтаж печатных плат</a>
                 </li>
-                <li class="section-site__item">
+                <li class="section-site__item section-site__item--accessories">
                   <a class="section-site__link" href="#">Комплектующие</a>
                 </li>
-                <li class="section-site__item">
+                <li class="section-site__item section-site__item--delivery">
                   <a class="section-site__link" href="#">Доставка</a>
                 </li>
-                <li class="section-site__item">
+                <li class="section-site__item section-site__item--contacts">
                   <a class="section-site__link" href="#">Контакты</a>
                 </li>
               </ul>
@@ -246,8 +280,8 @@
 
         <section class="contacts">
           <div class="title-wrapper is-active">
-            <h2 class="contacts__title">Наш офис</h2>
-            <button class="toogle" type="button"><span class="toogle__bar"></span></button>
+            <h2 class="contacts__title title-wrapper__title">Наш офис</h2>
+            <button class="toogle" type="button"></button>
           </div>
           <div class="content-wrapper">
             <p class="contacts__addres">г. Мытищи, Олимпийский проспект,<br> д.10</p>

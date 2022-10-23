@@ -7,14 +7,6 @@
   background-color: $color-transparent;
   cursor: pointer;
 
-  @include vp-767 {
-    display: block;
-    justify-self: end;
-  }
-}
-
-.toogle__bar {
-
   &::before,
   &::after {
     content: "";
@@ -31,5 +23,10 @@
 
   &::after {
     transform: rotate(90deg);
+  }
+
+  @include vp-767 {
+    display: block;
+    justify-self: end;
   }
 }

@@ -1,0 +1,20 @@
+.feedback {
+  padding-top: 170px;
+  padding-bottom: 250px;
+  background-color: $color-deep-sky-blue-form;
+  background-image: url("../img/form.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -577px;
+
+  @media (min-width: 1024px) {
+    @include retina {
+      background-image: url("../img/form@2x.jpg");
+      background-size: 1920px auto;
+    }
+  }
+}
+
+.feedback .container {
+  display: flex;
+  column-gap: 120px;
+}

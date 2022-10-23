@@ -6,7 +6,7 @@
   padding: 40px 50px 0;
   background-color: $color-shades-silver;
   background-repeat: no-repeat;
-  background-size: 350px 650px;
+  background-size: cover;
 
   &::after {
     content: "";
@@ -55,7 +55,6 @@
   @include vp-1023 {
     width: 100%;
     min-height: 250px;
-    background-size: 670px 250px;
 
     &--production {
       background-image: $color-black-pearl-shadow, url("../img/card-production-tablet.jpg");
@@ -72,7 +71,6 @@
     @include retina {
       & {
         padding: 30px;
-        background-size: 670px 250px;
       }
 
       &--production {
@@ -90,10 +88,6 @@
   }
 
   @include vp-767 {
-    & {
-      background-size: 270px 250px;
-    }
-
     &--production {
       background-image: $color-black-pearl-shadow, url("../img/card-production-mobile.jpg");
     }
@@ -107,9 +101,6 @@
     }
 
     @include retina {
-      & {
-        background-size: 270px 250px;
-      }
 
       &--production {
         background-image: $color-black-pearl-shadow, url("../img/card-production-mobile@2x.jpg");
@@ -153,6 +144,7 @@
   @include vp-767 {
     width: 100%;
     margin: 0;
+    padding-right: 30px;
   }
 }
 
