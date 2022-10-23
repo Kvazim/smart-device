@@ -10,8 +10,11 @@ const onOpenAccardion = (element) => {
 
 const onCloseAccardion = (element) => {
   if (element.parentNode.classList.contains('is-active')) {
+    // console.log('я туть');
     element.parentNode.classList.remove('is-active');
   } else {
+    // console.log('я туть каналья');
+    // console.log(element);
     element.classList.remove('is-active');
   }
 };

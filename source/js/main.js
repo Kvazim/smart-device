@@ -25,8 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 breakpointChecker();
-// removeClassNojs();
-// enableToogle();
 
 // ---------------------------------
 

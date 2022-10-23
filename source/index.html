@@ -62,7 +62,8 @@
         <div class="container">
           <h2 class="main-screen__title">Печатные платы</h2>
           <p class="main-screen__subtitle">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="main-screen__button" href="#feedback"><span class="main-screen__desktop">Получить бесплатную
+          <a class="main-screen__button scroll-button" href="#feedback"><span class="main-screen__desktop">Получить
+              бесплатную
               консультацию</span><span class="main-screen__mobile">бесплатная консультация</span></a>
         </div>
       </section>
@@ -181,8 +182,8 @@
             <p class="form__subtitle">Мы проконсультируем Вас бесплатно</p>
             <div class="form-wrapper">
               <form action="https://echo.htmlacademy.ru" method="get">
-                <label class="visually-hidden" for="username">Введите Ваше имя</label>
-                <input type="text" name="username" placeholder="Имя" id="username" required>
+                <label class="visually-hidden" for="user">Введите Ваше имя</label>
+                <input type="text" name="user" placeholder="Имя" id="user" required>
                 <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
                 <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
                 <label class="visually-hidden" for="question">Задайте вопрос</label>
@@ -293,7 +294,7 @@
   </div>
 
   <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
+  <div class="modal modal--preload" data-modal="feedback"  data-fix-block>
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -307,12 +308,12 @@
           <p class="form-modal__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <div class="form-modal-wrapper">
             <form action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="username">Введите Ваше имя</label>
-              <input type="text" name="username" placeholder="Имя" id="username" required>
-              <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-              <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
-              <label class="visually-hidden" for="question">Задайте вопрос</label>
-              <textarea placeholder="Ваш вопрос" id="question"></textarea>
+              <label class="visually-hidden" for="username" data-focus>Введите Ваше имя</label>
+              <input type="text" name="username" placeholder="Имя" id="username" required data-focus="#username">
+              <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+              <label class="visually-hidden" for="your-question">Задайте вопрос</label>
+              <textarea placeholder="Ваш вопрос" id="your-question"></textarea>
               <button type="submit">Отправить</button>
               <label>
                 <input class="visually-hidden" type="checkbox" checked required>
