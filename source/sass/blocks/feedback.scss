@@ -4,7 +4,7 @@
   background-color: $color-deep-sky-blue-form;
   background-image: url("../img/form.jpg");
   background-repeat: no-repeat;
-  background-position: 4px -578px;
+  background-position: 3px -578px;
 
   @media (min-width: 1024px) {
     @include retina {
@@ -26,7 +26,7 @@
 
 .feedback .container {
   display: grid;
-  grid-template-columns: 510px 1fr;
+  grid-template-columns: auto 1fr;
   column-gap: 120px;
   padding-right: 50px;
 
@@ -49,6 +49,8 @@
 
 .feedback__image {
   display: block;
-  width: 510px;
-  height: 285px;
+  width: 100%;
+  max-width: 510px;
+  height: auto;
+  max-height: 285px;
 }

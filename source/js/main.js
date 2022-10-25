@@ -1,9 +1,12 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {breakpointChecker} from './modules/header-scroll/header-scroll';
+import {removeActiv} from './modules/nojs/nojs';
 import './modules/feedback-scroll/feedback-scroll';
 import './modules/show-content/show-content';
 import './modules/footer-toogle/footer-toogle';
+import './modules/modal-focus/modal-focus';
+import {createMask} from './modules/mask/mask';
 
 // ---------------------------------
 
@@ -13,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  createMask();
 
   // Modules
   // ---------------------------------
@@ -24,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+removeActiv();
 breakpointChecker();
 
 // ---------------------------------

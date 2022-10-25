@@ -1,4 +1,4 @@
-import {titleWrapper} from '../nojs/nojs';
+import {titlesWrapper, removeActiv} from '../nojs/nojs';
 
 const onOpenAccardion = (element) => {
   if (element.classList.contains('toogle') || element.classList.contains('title-wrapper__title')) {
@@ -9,36 +9,29 @@ const onOpenAccardion = (element) => {
 };
 
 const onCloseAccardion = (element) => {
+
   if (element.parentNode.classList.contains('is-active')) {
-    // console.log('я туть');
     element.parentNode.classList.remove('is-active');
   } else {
-    // console.log('я туть каналья');
-    // console.log(element);
     element.classList.remove('is-active');
   }
 };
 
 const onButtonClick = (e) => {
   const element = e.target;
-  const availability = document.querySelectorAll('.title-wrapper');
-
-  if (availability.length === 0) {
-    onOpenAccardion(element);
-  }
 
   if (element.classList.contains('is-active') || element.parentNode.classList.contains('is-active')) {
     onCloseAccardion(element);
+    return;
   }
 
   if (!element.parentNode.classList.contains('is-active') || !element.classList.contains('is-active')) {
-    availability.forEach((item)=> {
-      item.classList.remove('is-active');
-    });
+    removeActiv();
     onOpenAccardion(element);
+    return;
   }
 };
 
-titleWrapper.forEach((toogle) => {
+titlesWrapper.forEach((toogle) => {
   toogle.addEventListener('click', onButtonClick);
 });

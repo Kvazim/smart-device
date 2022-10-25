@@ -669,9 +669,9 @@ button,
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0;
+  width: 470px;
+  margin: 0 auto;
   padding: 0;
-  justify-content: space-between;
 }
 
 .navigation__callback {
@@ -684,7 +684,7 @@ button,
   min-width: 160px;
   margin-right: 60px;
   padding: 10px 15px;
-  border: 1px solid #F2F5F6;
+  border: 1px solid #f2f5f6;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0);
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -692,7 +692,7 @@ button,
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
-  color: #F2F5F6;
+  color: #f2f5f6;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -711,8 +711,7 @@ button,
 .navigation-contacts {
   list-style-type: none;
   padding-top: 29px;
-  padding-left: 70px;
-  padding-right: 80px;
+  padding-right: 10px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -735,16 +734,16 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .navigation-contacts__icon {
-  fill: #00B2FF;
-  color: #00B2FF;
+  fill: #00b2ff;
+  color: #00b2ff;
 }
 
 .main-screen .container {
-  padding: 200px 165px 285px;
+  padding: 200px 165px 281px;
 }
 
 .main-screen {
@@ -767,7 +766,7 @@ button,
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .main-screen__subtitle {
@@ -779,22 +778,22 @@ button,
   font-size: 22px;
   font-weight: 400;
   line-height: 34px;
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .main-screen__button {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 17px 27px;
   border: none;
   border-radius: 3px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #F2F5F6;
+  color: #f2f5f6;
   cursor: pointer;
 }
 
@@ -820,8 +819,8 @@ button,
 .benefits__item {
   min-height: 300px;
   padding: 35px 40px 35px;
-  border: 1px solid #EBEBEB;
-  border-left: 5px solid #00B2FF;
+  border: 1px solid #ebebeb;
+  border-left: 5px solid #00b2ff;
   list-style-type: none;
   cursor: pointer;
 }
@@ -831,7 +830,7 @@ button,
   width: 35px;
   height: 35px;
   margin-bottom: 20px;
-  fill: #00B2FF;
+  fill: #00b2ff;
 }
 
 .benefits__title {
@@ -842,7 +841,7 @@ button,
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .benefits__description {
@@ -910,7 +909,7 @@ button,
   min-width: 180px;
   min-height: 45px;
   padding: 12px 14px;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
   background-color: transparent;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -918,7 +917,7 @@ button,
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.05em;
-  color: #00B2FF;
+  color: #00b2ff;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -969,7 +968,7 @@ button,
   width: auto;
   min-height: 650px;
   padding: 47px 60px 0 40px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -983,7 +982,7 @@ button,
   bottom: 0;
   right: 0;
   border: 1px solid #ffffff;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-size: 5px 10px;
@@ -1027,17 +1026,17 @@ button,
 .feedback {
   padding-top: 164px;
   padding-bottom: 246px;
-  background-color: #00B3FF;
+  background-color: #00b3ff;
   background-image: url("../img/form.jpg");
   background-repeat: no-repeat;
-  background-position: 4px -578px;
+  background-position: 3px -578px;
 }
 
 .feedback .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 510px 1fr;
-  grid-template-columns: 510px 1fr;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
   -webkit-column-gap: 120px;
   -moz-column-gap: 120px;
   column-gap: 120px;
@@ -1050,8 +1049,10 @@ button,
 
 .feedback__image {
   display: block;
-  width: 510px;
-  height: 285px;
+  width: 100%;
+  max-width: 510px;
+  height: auto;
+  max-height: 285px;
 }
 
 .form__title {
@@ -1113,6 +1114,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper input::-moz-placeholder {
@@ -1127,6 +1129,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper input:-ms-input-placeholder {
@@ -1141,6 +1144,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper input::-ms-input-placeholder {
@@ -1155,6 +1159,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper input::placeholder {
@@ -1169,6 +1174,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper textarea {
@@ -1184,7 +1190,7 @@ button,
   color: #ffffff;
   grid-column: 1/-1;
   min-height: 155px;
-  padding: 10px 0px;
+  padding: 22px 15px;
 }
 
 .form-wrapper textarea::-webkit-input-placeholder {
@@ -1199,6 +1205,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper textarea::-moz-placeholder {
@@ -1213,6 +1220,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper textarea:-ms-input-placeholder {
@@ -1227,6 +1235,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper textarea::-ms-input-placeholder {
@@ -1241,6 +1250,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper textarea::placeholder {
@@ -1255,6 +1265,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-wrapper button {
@@ -1333,8 +1344,8 @@ button,
 .footer .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 355px 480px 1fr;
-  grid-template-columns: 355px 480px 1fr;
+  -ms-grid-columns: 230px 1fr 345px;
+  grid-template-columns: 230px 1fr 345px;
   gap: 20px;
   padding-top: 54px;
   padding-bottom: 48px;
@@ -1380,8 +1391,8 @@ button,
 
 .social__icon {
   display: block;
-  fill: #F8FDFF;
-  color: #F8FDFF;
+  fill: #f8fdff;
+  color: #f8fdff;
 }
 
 .toogle {
@@ -1406,7 +1417,7 @@ button,
   width: 100%;
   height: 1px;
   left: 0;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   -webkit-transition: -webkit-transform 0.3s linear;
   transition: -webkit-transform 0.3s linear;
   -o-transition: transform 0.3s linear;
@@ -1434,6 +1445,8 @@ button,
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: 26px;
 }
 
 .section-site__title {
@@ -1455,7 +1468,10 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  row-gap: 8px;
   margin: 0;
   padding: 0;
 }
@@ -1622,7 +1638,7 @@ button,
   position: relative;
   width: 500px;
   padding: 40px;
-  background-color: #00B3FF;
+  background-color: #00b3ff;
 }
 
 .modal__close-btn {
@@ -1734,6 +1750,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper input::-moz-placeholder {
@@ -1748,6 +1765,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper input:-ms-input-placeholder {
@@ -1762,6 +1780,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper input::-ms-input-placeholder {
@@ -1776,6 +1795,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper input::placeholder {
@@ -1790,6 +1810,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper textarea {
@@ -1819,6 +1840,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper textarea::-moz-placeholder {
@@ -1833,6 +1855,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper textarea:-ms-input-placeholder {
@@ -1847,6 +1870,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper textarea::-ms-input-placeholder {
@@ -1861,6 +1885,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper textarea::placeholder {
@@ -1875,6 +1900,7 @@ button,
   line-height: 22px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper button {
@@ -1958,8 +1984,8 @@ button,
 
   .navigation__callback:hover,
   .navigation__callback:focus {
-    border-color: #00B2FF;
-    color: #00B2FF;
+    border-color: #00b2ff;
+    color: #00b2ff;
   }
 
   .navigation__callback:active {
@@ -1968,7 +1994,7 @@ button,
 
   .navigation-contacts__link:hover .navigation-contacts__text,
   .navigation-contacts__link:focus .navigation-contacts__text {
-    color: #00B2FF;
+    color: #00b2ff;
   }
 
   .navigation-contacts__link:active {
@@ -1986,26 +2012,26 @@ button,
 
   .benefits__item:hover,
   .benefits__item:focus {
-    border: 1px solid #EBEBEB;
-    background-color: #00B2FF;
+    border: 1px solid #ebebeb;
+    background-color: #00b2ff;
   }
 
   .benefits__item:hover .benefits__title,
   .benefits__item:focus .benefits__title,
   .benefits__item:hover .benefits__description,
   .benefits__item:focus .benefits__description {
-    color: #F2F5F6;
+    color: #f2f5f6;
   }
 
   .benefits__item:hover .benefits__icon,
   .benefits__item:focus .benefits__icon {
-    fill: #F2F5F7;
-    color: #F2F5F7;
+    fill: #f2f5f7;
+    color: #f2f5f7;
   }
 
   .about-content__button:hover,
   .about-content__button:focus {
-    background-color: #00B2FF;
+    background-color: #00b2ff;
     color: #ffffff;
   }
 
@@ -2015,13 +2041,13 @@ button,
 
   .cards__link:hover,
   .cards__link:focus {
-    -webkit-box-shadow: 0 6px 10px 0 #00B2FF;
-    box-shadow: 0 6px 10px 0 #00B2FF;
+    -webkit-box-shadow: 0 6px 10px 0 #00b2ff;
+    box-shadow: 0 6px 10px 0 #00b2ff;
   }
 
   .cards__link:active {
-    -webkit-box-shadow: 0 3px 5px 0 #00B2FF;
-    box-shadow: 0 3px 5px 0 #00B2FF;
+    -webkit-box-shadow: 0 3px 5px 0 #00b2ff;
+    box-shadow: 0 3px 5px 0 #00b2ff;
   }
 
   .form-wrapper button:hover,
@@ -2057,8 +2083,8 @@ button,
 
   .social__link:hover .social__icon,
   .social__link:focus .social__icon {
-    fill: #00B2FF;
-    color: #00B2FF;
+    fill: #00b2ff;
+    color: #00b2ff;
   }
 
   .social__link:active .social__icon {
@@ -2193,6 +2219,8 @@ button,
   }
 
   .navigation__contacts {
+    width: auto;
+    margin: 0;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -2219,7 +2247,7 @@ button,
   }
 
   .main-screen .container {
-    padding: 96px 50px 205px;
+    padding: 96px 50px 203px;
   }
 
   .main-screen {
@@ -2353,7 +2381,7 @@ button,
   }
 
   .form-wrapper textarea {
-    padding-top: 17px;
+    padding-top: 30px;
   }
 
   .form-wrapper label {
@@ -2390,6 +2418,10 @@ button,
     margin: 0 auto;
     margin-right: -5px;
     margin-top: 5px;
+  }
+
+  .section-site {
+    margin: 0;
   }
 
   .section-site__list {

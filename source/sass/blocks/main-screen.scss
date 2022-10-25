@@ -1,8 +1,8 @@
 .main-screen .container {
-  padding: 200px 165px 285px;
+  padding: 200px 165px 281px;
 
   @include vp-1023 {
-    padding: 96px 50px 205px;
+    padding: 96px 50px 203px;
   }
 
   @include vp-767 {
@@ -19,7 +19,7 @@
 
   @media (min-width: 1024px) {
     @include retina {
-      background-image:$black-pearl-main, url("../img/main-fon@2x.jpg");
+      background-image: $black-pearl-main, url("../img/main-fon@2x.jpg");
       background-size: 1920px auto;
     }
   }
@@ -93,7 +93,7 @@
 
 .main-screen__button {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 17px 27px;
   border: none;
   border-radius: 3px;
   background-color: $color-deep-sky-blue;
@@ -120,7 +120,6 @@
   }
 
   @media (hover: hover), screen and (min-width: 0\0) {
-
     &:hover,
     &:focus {
       background-color: $color-neon-blue;
@@ -133,7 +132,6 @@
 }
 
 .main-screen__desktop {
-
   @include vp-767 {
     display: none;
   }

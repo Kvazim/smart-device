@@ -144,25 +144,23 @@
 
 @mixin checkbox-hover {
   @media (hover: hover), screen and (min-width: 0\0) {
-
-    .form-wrapper input[type="checkbox"]:hover+span,
-    .form-wrapper input[type="checkbox"]:focus+span {
+    .form-wrapper input[type="checkbox"]:hover + span,
+    .form-wrapper input[type="checkbox"]:focus + span {
       border-color: $color-neon-blue;
     }
 
-    .form-wrapper input[type="checkbox"]:active+span {
+    .form-wrapper input[type="checkbox"]:active + span {
       opacity: 0.4;
     }
 
-    .form-wrapper input[type="checkbox"]:disabled+span {
+    .form-wrapper input[type="checkbox"]:disabled + span {
       opacity: 0.8;
     }
   }
 }
 
- @mixin form-button-hover {
+@mixin form-button-hover {
   @media (hover: hover), screen and (min-width: 0\0) {
-
     &:hover,
     &:focus {
       opacity: 0.7;
@@ -178,7 +176,7 @@
     opacity: 0.8;
     pointer-events: none;
   }
- }
+}
 
 // Mobile first
 

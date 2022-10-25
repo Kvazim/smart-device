@@ -1,8 +1,7 @@
 .navigation-contacts {
   list-style-type: none;
   padding-top: 29px;
-  padding-left: 70px;
-  padding-right: 80px;
+  padding-right: 10px;
   align-items: center;
 
   @include vp-1023 {
@@ -26,9 +25,7 @@
   @include vp-1023 {
     padding: 10px;
 
-    @media (hover: hover),
-    screen and (min-width: 0\0) {
-
+    @media (hover: hover), screen and (min-width: 0\0) {
       &:hover,
       &:focus {
         opacity: 0.8;
@@ -43,15 +40,12 @@
 }
 
 .navigation-contacts__text {
-
   @include vp-1023 {
     display: none;
   }
 }
 
-@media (hover: hover),
-screen and (min-width: 0\0) {
-
+@media (hover: hover), screen and (min-width: 0\0) {
   .navigation-contacts__link:hover .navigation-contacts__text,
   .navigation-contacts__link:focus .navigation-contacts__text {
     color: $color-deep-sky-blue;

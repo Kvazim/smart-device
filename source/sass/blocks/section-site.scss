@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: 26px;
+
+  @include vp-1023 {
+    margin: 0;
+  }
 
   @include vp-767 {
     display: grid;
@@ -17,6 +23,7 @@
   margin-top: 7px;
   margin-bottom: 20px;
   padding: 0;
+
   @include footer-title;
 
   @include vp-767 {
@@ -27,7 +34,8 @@
 .section-site__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  column-gap: 50px;
+  row-gap: 8px;
   margin: 0;
   padding: 0;
 

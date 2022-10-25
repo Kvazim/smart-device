@@ -11,6 +11,7 @@
 .form-modal-wrapper input::placeholder {
   @include form-input-text;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper textarea {
@@ -22,6 +23,7 @@
 .form-modal-wrapper textarea::placeholder {
   @include form-input-text;
   background-color: transparent;
+  padding: 0;
 }
 
 .form-modal-wrapper button {
@@ -36,11 +38,11 @@
   @include form-label;
 }
 
-.form-modal-wrapper input[type="checkbox"]+span {
+.form-modal-wrapper input[type="checkbox"] + span {
   @include checkbox;
 }
 
-.form-modal-wrapper input[type="checkbox"]:checked+span::before {
+.form-modal-wrapper input[type="checkbox"]:checked + span::before {
   @include checkbox-checked;
 }
 

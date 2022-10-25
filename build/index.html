@@ -8,6 +8,7 @@
   <meta name="description"
     content="Компания Smart Device, печатные платы, производство и монтаж, поставка комплектующих, блоков и модулей, комплектующие для светотехники.">
   <title>Умные технологии Smart Device</title>
+  <meta name="theme-color" content="#00B2FF" />
   <meta name="msapplication-config" content="./img/favicon/browserconfig.xml" />
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -110,7 +111,7 @@
         <div class="container">
           <picture>
             <source type="image/webp" srcset="./img/content/2022.webp 1x, ./img/content/2022@2x.webp 2x">
-            <img class="about__img" src="./img/content/2022.jpg" srcset="./img/content/2022@2x.jpg 2x" width="150"
+            <img class="about__img" src="./img/content/2022.jpg" srcset="./img/content/2022@2x.jpg 2x" loading="lazy" width="150"
               height="320" alt="2022.">
           </picture>
           <div class="about__content about-content">
@@ -174,7 +175,7 @@
               <source type="image/webp"
                 srcset="./img/content/paper-airplane.webp 1x, img/content/paper-airplane@2x.webp 2x">
               <img class="feedback__image" src="./img/content/paper-airplane.png"
-                srcset="./img/content/paper-airplane@2x.png 2x" alt="Бумажный самолетик." width="510" height="285">
+                srcset="./img/content/paper-airplane@2x.png 2x" loading="lazy" alt="Бумажный самолетик." width="510" height="285">
             </picture>
           </div>
           <div class="feedback__form form">
@@ -183,9 +184,10 @@
             <div class="form-wrapper">
               <form action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden" for="user">Введите Ваше имя</label>
-                <input type="text" name="user" placeholder="Имя" id="user" required>
+                <input type="text" name="user" placeholder="Имя" id="user" minlength="3" required>
                 <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-                <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+                <input type="tel" name="tel" id="tel" placeholder="Телефон" min="10" max="10"
+                  pattern="^\+\d{1}\(\d{3}\)\d{3}-\d{2}-\d{2}$" data-mask="phone" required>
                 <label class="visually-hidden" for="question">Задайте вопрос</label>
                 <textarea placeholder="Ваш вопрос" id="question"></textarea>
                 <button type="submit">Задать вопрос</button>
@@ -294,7 +296,7 @@
   </div>
 
   <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback"  data-fix-block>
+  <div class="modal modal--preload" data-modal="feedback" data-fix-block>
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -308,10 +310,11 @@
           <p class="form-modal__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <div class="form-modal-wrapper">
             <form action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="username" data-focus>Введите Ваше имя</label>
-              <input type="text" name="username" placeholder="Имя" id="username" required data-focus="#username">
+              <label class="visually-hidden" for="username">Введите Ваше имя</label>
+              <input type="text" name="username" placeholder="Имя" id="username" minlength="3" required>
               <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
-              <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" min="10" max="10" data-mask="phone"
+                required>
               <label class="visually-hidden" for="your-question">Задайте вопрос</label>
               <textarea placeholder="Ваш вопрос" id="your-question"></textarea>
               <button type="submit">Отправить</button>
@@ -327,7 +330,6 @@
     </div>
   </div>
 
-  <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
