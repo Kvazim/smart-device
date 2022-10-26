@@ -75,7 +75,7 @@
   }
 }
 
-.benefits__icon {
+.benefits__item svg {
   display: block;
   width: 35px;
   height: 35px;
@@ -93,7 +93,7 @@
   }
 }
 
-.benefits__title {
+.benefits__item h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 13px;
@@ -114,7 +114,7 @@
   }
 }
 
-.benefits__description {
+.benefits__item p {
   margin: 0;
   padding: 0;
   font-family: $ff-ptmono;

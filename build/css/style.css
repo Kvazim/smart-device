@@ -784,6 +784,7 @@ button,
 .main-screen__button {
   display: inline-block;
   padding: 17px 27px;
+  vertical-align: baseline;
   border: none;
   border-radius: 3px;
   background-color: #00b2ff;
@@ -825,7 +826,7 @@ button,
   cursor: pointer;
 }
 
-.benefits__icon {
+.benefits__item svg {
   display: block;
   width: 35px;
   height: 35px;
@@ -833,7 +834,7 @@ button,
   fill: #00b2ff;
 }
 
-.benefits__title {
+.benefits__item h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 13px;
@@ -844,7 +845,7 @@ button,
   color: #00b2ff;
 }
 
-.benefits__description {
+.benefits__item p {
   margin: 0;
   padding: 0;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -1408,7 +1409,7 @@ button,
 .toogle::before,
 .toogle::after {
   content: "";
-  display: inline-block;
+  display: block;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -2282,11 +2283,11 @@ button,
     padding-bottom: 30px;
   }
 
-  .benefits__icon {
+  .benefits__item svg {
     margin-bottom: 15px;
   }
 
-  .benefits__title {
+  .benefits__item h3 {
     margin-bottom: 8px;
   }
 
@@ -2549,19 +2550,19 @@ button,
     margin-bottom: 8px;
   }
 
-  .benefits__icon {
+  .benefits__item svg {
     width: 30px;
     height: 30px;
     margin-bottom: 17px;
   }
 
-  .benefits__title {
+  .benefits__item h3 {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 15px;
   }
 
-  .benefits__description {
+  .benefits__item p {
     font-size: 14px;
     line-height: 19px;
   }

@@ -10,7 +10,7 @@
   &::before,
   &::after {
     content: "";
-    display: inline-block;
+    display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
