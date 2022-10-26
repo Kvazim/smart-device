@@ -54,15 +54,15 @@
       background-color: $color-deep-sky-blue;
     }
 
-    &:hover .benefits__title,
-    &:focus .benefits__title,
-    &:hover .benefits__description,
-    &:focus .benefits__description {
+    &:hover h3,
+    &:focus h3,
+    &:hover p,
+    &:focus p {
       color: $color-alice-blue;
     }
 
-    &:hover .benefits__icon,
-    &:focus .benefits__icon {
+    &:hover svg,
+    &:focus svg {
       fill: $color-alice-blue-icon;
       color: $color-alice-blue-icon;
     }
@@ -70,7 +70,7 @@
 }
 
 @include vp-767 {
-  .benefits__item--long .benefits__title {
+  .benefits__item--long h3 {
     margin-bottom: 8px;
   }
 }
