@@ -46,4 +46,6 @@
   @include checkbox-checked;
 }
 
-@include checkbox-hover;
+.form-modal-wrapper {
+  @include checkbox-hover;
+}

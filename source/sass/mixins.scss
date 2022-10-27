@@ -144,16 +144,25 @@
 
 @mixin checkbox-hover {
   @media (hover: hover), screen and (min-width: 0\0) {
-    .form-wrapper input[type="checkbox"]:hover + span,
-    .form-wrapper input[type="checkbox"]:focus + span {
-      border-color: $color-neon-blue;
+    & label:hover,
+    & label:focus-within {
+      color: $color-neon-blue;
     }
 
-    .form-wrapper input[type="checkbox"]:active + span {
+    & label:active {
       opacity: 0.4;
     }
 
-    .form-wrapper input[type="checkbox"]:disabled + span {
+    & input[type="checkbox"]:hover + span,
+    & input[type="checkbox"]:focus + span {
+      border-color: $color-neon-blue;
+    }
+
+    & input[type="checkbox"]:active + span {
+      opacity: 0.4;
+    }
+
+    & input[type="checkbox"]:disabled + span {
       opacity: 0.8;
     }
   }

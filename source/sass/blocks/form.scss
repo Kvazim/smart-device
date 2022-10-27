@@ -113,4 +113,6 @@
   @include checkbox-checked;
 }
 
-@include checkbox-hover
+.form-wrapper {
+  @include checkbox-hover
+}

@@ -2076,6 +2076,15 @@ button,
     opacity: 0.4;
   }
 
+  .form-wrapper label:hover,
+  .form-wrapper label:focus-within {
+    color: #2c39f2;
+  }
+
+  .form-wrapper label:active {
+    opacity: 0.4;
+  }
+
   .form-wrapper input[type="checkbox"]:hover + span,
   .form-wrapper input[type="checkbox"]:focus + span {
     border-color: #2c39f2;
@@ -2142,16 +2151,25 @@ button,
     opacity: 0.4;
   }
 
-  .form-wrapper input[type="checkbox"]:hover + span,
-  .form-wrapper input[type="checkbox"]:focus + span {
-    border-color: #2c39f2;
+  .form-modal-wrapper label:hover,
+  .form-modal-wrapper label:focus-within {
+    color: #2c39f2;
   }
 
-  .form-wrapper input[type="checkbox"]:active + span {
+  .form-modal-wrapper label:active {
     opacity: 0.4;
   }
 
-  .form-wrapper input[type="checkbox"]:disabled + span {
+  .form-modal-wrapper input[type="checkbox"]:hover + span,
+  .form-modal-wrapper input[type="checkbox"]:focus + span {
+    border-color: #2c39f2;
+  }
+
+  .form-modal-wrapper input[type="checkbox"]:active + span {
+    opacity: 0.4;
+  }
+
+  .form-modal-wrapper input[type="checkbox"]:disabled + span {
     opacity: 0.8;
   }
 }
