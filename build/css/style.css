@@ -913,8 +913,16 @@ button,
   padding: 0;
 }
 
+.about-content__mobile {
+  display: block;
+}
+
 .about-content__more {
   display: none;
+}
+
+.is-show .about-content__mobile {
+  display: block;
 }
 
 .is-show .about-content__more {
@@ -2362,8 +2370,11 @@ button,
   }
 
   .about-content__subtitle {
-    height: 258px;
-    margin-bottom: 19px;
+    margin-bottom: -5px;
+  }
+
+  .about-content__subtitle p {
+    margin-bottom: 20px;
   }
 
   .products {
@@ -2642,13 +2653,16 @@ button,
   }
 
   .about-content__subtitle {
-    height: 203px;
     font-size: 14px;
     line-height: 19px;
   }
 
   .about-content__subtitle p {
     margin-bottom: 18px;
+  }
+
+  .about-content__mobile {
+    display: none;
   }
 
   .about-content__button {
