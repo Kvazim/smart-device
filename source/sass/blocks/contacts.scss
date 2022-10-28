@@ -5,9 +5,7 @@
 
   @include vp-767 {
     display: grid;
-    row-gap: 20px;
-    padding: 0 25px;
-    padding-bottom: 15px;
+    gap: 0;
     border-bottom: 1px solid $color-alice-blue-shadow;
   }
 }

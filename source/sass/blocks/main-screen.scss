@@ -1,44 +1,43 @@
 .main-screen .container {
-  padding: 200px 165px 281px;
+  padding: 304px 100px 280px 165px;
 
   @include vp-1023 {
-    padding: 96px 50px 203px;
+    padding: 180px 50px 202px;
   }
 
   @include vp-767 {
-    padding: 97px 25px 190px;
+    padding: 150px 25px 190px;
   }
 }
 
 .main-screen {
-  margin-top: -17px;
+  margin-top: -120px;
   background-color: $color-black-pearl;
   background-image: $black-pearl-main, url("../img/main-fon.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -103px;
+  background-size: cover;
 
   @media (min-width: 1024px) {
     @include retina {
       background-image: $black-pearl-main, url("../img/main-fon@2x.jpg");
-      background-size: 1920px auto;
     }
   }
 
   @include vp-1023 {
-    background-size: 1396px auto;
-    background-position: -121px -83px;
+    margin-top: -100px;
+    background-image: $black-pearl-main, url("../img/main-fon-tablet.jpg");
 
     @include retina {
-      background-size: 1396px auto;
+      background-image: $black-pearl-main, url("../img/main-fon-tablet@2x.jpg");
     }
   }
 
   @include vp-767 {
-    background-size: 1220px auto;
-    background-position: -229px -53px;
+    margin-top: -70px;
+    background-image: $black-pearl-main, url("../img/main-fon-mobile.jpg");
 
     @include retina {
-      background-size: 1220px auto;
+      background-image: $black-pearl-main, url("../img/main-fon-mobile@2x.jpg");
     }
   }
 }

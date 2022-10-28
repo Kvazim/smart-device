@@ -60,6 +60,28 @@
   color: $color-white-shadow;
 }
 
+@mixin footer-subtitle-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin footer-subtitle-hover {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      color: $color-neon-blue;
+    }
+
+    &:active {
+      color: $color-neon-blue;
+      opacity: 0.7;
+    }
+  }
+}
+
 @mixin form-title {
   margin: 0;
   margin-bottom: 15px;

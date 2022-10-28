@@ -1,6 +1,5 @@
 .form-modal-wrapper form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   row-gap: 20px;
 }
 
@@ -28,14 +27,17 @@
 
 .form-modal-wrapper button {
   @include form-button;
-  margin-top: 15px;
-  padding: 15px 25px;
+  margin-top: 6px;
+  padding: 14px 25px;
+  padding-bottom: 12px;
+  grid-row: 4/5;
 
   @include form-button-hover;
 }
 
 .form-modal-wrapper label {
   @include form-label;
+  margin-left: 10px;
 }
 
 .form-modal-wrapper input[type="checkbox"] + span {

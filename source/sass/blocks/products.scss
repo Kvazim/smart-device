@@ -47,16 +47,18 @@
 .products__list {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 85px;
-  flex-wrap: wrap;
 
   @include vp-1023 {
-    flex-direction: column;
+
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 }
 
 .products__item {
+  min-width: 0;
   list-style-type: none;
 }
