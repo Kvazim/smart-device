@@ -662,11 +662,14 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-column-gap: 44px;
+  -moz-column-gap: 44px;
+  column-gap: 44px;
   width: 470px;
   margin: 0 auto;
   padding: 0;
@@ -675,9 +678,8 @@ button,
 .navigation__callback {
   -ms-grid-column-align: end;
   justify-self: end;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
   min-width: 160px;
   margin-right: 60px;
   padding: 10px 15px;

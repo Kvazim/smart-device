@@ -13,8 +13,9 @@
 
 .navigation__contacts {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 44px;
   width: 470px;
   margin: 0 auto;
   padding: 0;
@@ -33,7 +34,7 @@
 
 .navigation__callback {
   justify-self: end;
-  align-self: center;
+  align-self: baseline;
   min-width: 160px;
   margin-right: 60px;
   padding: 10px 15px;
