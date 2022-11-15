@@ -189,7 +189,7 @@
             <div class="form-wrapper">
               <form action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
                 <label class="visually-hidden" for="user">Введите Ваше имя</label>
-                <input type="text" name="user" placeholder="Имя" id="user" minlength="3" required>
+                <input type="text" name="user" placeholder="Имя" id="user" minlength="3" pattern="[A-Za-zА-Яа-яЁё\s\-]+$" required>
                 <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
                 <input type="tel" name="tel" id="tel" placeholder="Телефон"
                   pattern="^\+\d{1}\(\d{3}\)\d{3}-\d{2}-\d{2}$" data-mask="phone" required>
